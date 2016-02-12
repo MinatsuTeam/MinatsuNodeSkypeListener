@@ -60,8 +60,8 @@ var sendMessage = function(data) {
         return;
     }
 
-    data.message = data.message.replace(new RegExp("(&[0-9|a-f])|({(dark_)?(blue|green|aqua|red|purple|gray|black|yellow|gold|white)})", 'g'), "");
-    
+    data.message = data.message.replace(new RegExp("(&[0-9|a-f])|({(dark_)?(bl(ue|ack)|gr(ay|een)|aqua|red|purple|yellow|gold|white)})", 'g'), "");
+
     skyweb.sendMessage(data.channel, data.message);
 }
 
